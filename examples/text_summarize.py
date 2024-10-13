@@ -3,9 +3,9 @@ from sklearn.model_selection import train_test_split
 from datasets import load_dataset
 import sys
 sys.path.append(path.dirname("../"))
-from model.trainer import train_transformer
+from model.trainer_tpu import train_transformer
 from helpers.plot import plot_performance
-from model.layers import tokenize,transformer
+from model.layers_tpu import tokenize,transformer
 
 def load_and_preprocess_data(dataset_name='cnn_dailymail'):
     # Load dataset
